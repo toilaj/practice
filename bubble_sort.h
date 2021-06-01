@@ -9,10 +9,10 @@
 
 using namespace std;
 
-class bubble_sort : public common{
+class bubble_sort : public common {
 
 public:
-    bubble_sort(int *s, unsigned int cnt, string name) : common(s, cnt, name) {};
+    bubble_sort(int *s, unsigned int cnt) : common(s, cnt, "bubble sort") {};
     void sort() override;
     ~bubble_sort() override = default;
 };

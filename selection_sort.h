@@ -7,10 +7,10 @@
 #include "common.h"
 using namespace std;
 
-class selection_sort : public common{
+class selection_sort : public common {
 
 public:
-    selection_sort(int *s, int cnt, string name): common(s, cnt, name) {};
+    selection_sort(int *s, int cnt) : common(s, cnt, "selection sort") {};
     ~selection_sort() override = default;
     void sort() override;
 };

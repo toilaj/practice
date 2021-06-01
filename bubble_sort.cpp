@@ -3,6 +3,11 @@
 //
 #include "bubble_sort.h"
 
+/*
+ * 基本排序算法
+ * i - 轮数
+ * j - 每轮遍历一遍，两两比较交换
+ * */
 void bubble_sort::sort() {
     int i;
     int j;

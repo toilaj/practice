@@ -2,11 +2,12 @@
 #include "selection_sort.h"
 #include "insert_sort.h"
 #include "shell_sort.h"
+#include "merge_sort.h"
 
-#define MAX_LENGTH (7)
+#define MAX_LENGTH (8)
 
 int main() {
-    int array[MAX_LENGTH] = {3, 2, 1, 5, 6, 4, 3};
+    int array[MAX_LENGTH] = {5, 8, 6, 3, 9, 2, 1, 7};
     bubble_sort bubble(array, MAX_LENGTH);
     bubble.sort();
     bubble.print();
@@ -22,6 +23,10 @@ int main() {
     shell_sort shell(array, MAX_LENGTH);
     shell.sort();
     shell.print();
+
+    merge_sort merge(array, MAX_LENGTH);
+    merge.sort();
+    merge.print();
 
     return 0;
 }
